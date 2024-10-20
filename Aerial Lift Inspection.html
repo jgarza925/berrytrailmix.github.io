@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerial Lift Inspection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Aerial Lift Inspection Form</h1>
+
+    <!-- Date -->
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+
+    <!-- Company Name -->
+    <label for="company">Company Name:</label>
+    <select id="company" name="company">
+        <option>IIC</option>
+        <option>RAB</option>
+        <option>Cooper Tacia</option>
+    </select>
+
+    <!-- Inspector's Name -->
+    <label for="inspector">Inspector's Name:</label>
+    <input type="text" id="inspector" name="inspector" placeholder="Enter inspector's name">
+
+    <!-- 20 Inspection Questions -->
+    <div id="questions">
+        <!-- Example of a question -->
+        <div class="question">
+            <label for="q1">1. All inspections up to date on Aerial Lift?</label>
+            <select id="q1" name="q1">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <!-- Copy and paste the block above to add more questions -->
+        <!-- Here are 19 more questions -->
+        <div class="question">
+            <label for="q2">2. Correct Aerial Lift being utilized for the job?</label>
+            <select id="q2" name="q2">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. All alarms working properly on the aerial lift?</label>
+            <select id="q3" name="q3">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q4">4. Swing radius has been determined to be free and clear of any obstructions?</label>
+            <select id="q4" name="q4">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q5">5. Any obstructions in the view of the operator?</label>
+            <select id="q5" name="q5">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q6">6. Battery bank show no sign of corrosion?</label>
+            <select id="q6" name="q6">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q7">7. All control components working properly?</label>
+            <select id="q7" name="q7">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q8">8. Are the controls clearly labeled?</label>
+            <select id="q8" name="q8">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q9">9. All boom lacing free of deficiencies?</label>
+            <select id="q9" name="q9">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q10">10. Equipped with fire extinguisher and properly inspected?</label>
+            <select id="q10" name="q10">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q11">11. Is the aerial lift set up level?</label>
+            <select id="q11" name="q11">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q12">12. Hydraulic hoses are free of deficiencies?</label>
+            <select id="q12" name="q12">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q13">13. If equipped are the tires in good condition?</label>
+            <select id="q13" name="q13">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q14">14. Is the operator qualified to operate the aerial lift?</label>
+            <select id="q14" name="q14">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q15">15. Is the aerial lift capacity being maintained?</label>
+            <select id="q15" name="q15">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q16">Spotter being utilized?</label>
+            <select id="q16" name="q16">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q17">17. Aerial lift barricaded properly?</label>
+            <select id="q17" name="q17">
+                <option value="na">N/A</option>
+                <option value="0">0 - Unacceptable</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Below Average</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Perfect</option>
+            </select>
+        </div>
+
+        <!-- Add additional 18 questions here, similar to the format above -->
+        <!-- Repeat for questions 3 through 20 -->
+        
+    </div>
+
+    <button type="button" class="submit-btn" onclick="submitForm()">Submit Inspection</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+    function submitForm() {
+        const date = document.getElementById('date').value;
+        const company = document.getElementById('company').value;
+        const inspector = document.getElementById('inspector').value;
+
+        if (!date || !company || !inspector) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        let resultText = `Inspection for ${company} by ${inspector} on ${date} submitted successfully.`;
+        document.getElementById('result').innerText = resultText;
+    }
+</script>
+
+</body>
+</html>
